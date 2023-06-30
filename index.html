@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+    body {
+      background-color: hsl(220, 15%, 55%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; 
+      
+    }
+  
+    .main {
+      background-color: hsl(0, 0%, 100%);
+      padding: 20px;
+      width: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 25px;
+      flex-direction: column;
+    }
+    .main .img img{
+      border-radius: 25px;
+      width: 400px;
+    }
+    .main .text h1{
+      font-weight: 700px;
+      text-align: center;
+    }
+    .main .text p{
+      font-weight: 400;
+      font-size: 15px;
+      text-align: center;
+      font-family: "Poppins",sans-serif;
+    }
+
+    @media screen and (max-width: 376px) {
+      body{
+        justify-content: center;
+      }
+    .main{
+      width: 200px;
+      
+    }
+    .main .img img{
+      border-radius: 25px;
+      width: 200px;
+    }
+    .main .text h1{
+      font-weight: 700px;
+      font-size: 18px;
+    }
+    .main .text p{
+      font-size: 12px;
+    }
+}
+@media screen and (max-width: 1440px) {
+      body{
+        justify-content: center;
+      }
+    .main{
+      width: 200px; 
+    }
+    .main .img img{
+      border-radius: 25px;
+      width: 220px;
+    }
+    .main .text h1{
+      font-weight: 700px;
+      font-size: 18px;
+    }
+    .main .text p{
+      font-size: 12px;
+    }
+}
+
+  </style>
+  
+</head>
+<body>
+<div class="main">
+<div class="img">
+  <img src="./images/image-qr-code.png" alt="" >
+</div>
+<div class="text">
+  <h1>Improve your front-end  skills by building projects</h1>
+  <p>Scan the QR code to visit Front-end   Mentor and take your coding skills to next level</p>
+</div>
+</div>
+</body>
+</html>
